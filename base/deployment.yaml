@@ -2,9 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fayaaz-deployment
-  namespace: fayaaz
+  labels:
+    app: fayaaz
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: fayaaz
@@ -13,8 +14,9 @@ spec:
       labels:
         app: fayaaz
     spec:
+      serviceAccountName: fayaaz-app-sa  # Use the created ServiceAccount
       containers:
       - name: fayaaz
-        image: nginx:latest
+        image: nginx:latest  # You can replace this with the actual image for your app
         ports:
         - containerPort: 80

@@ -1,6 +1,6 @@
 resources:
   - ../../base
   - namespace.yaml
+  - scc-add-fayaaz-app-sa.yaml  # Include SCC modification for the dev namespace
 
-namePrefix: dev-
-namespace: dev-fayaaz
+namespace: dev-fayaaz  # Set the namespace for this overlay
