@@ -1,6 +1,0 @@
-apiVersion: security.openshift.io/v1
-kind: SecurityContextConstraints
-metadata:
-  name: anyuid
-users:
-  - system:serviceaccount:your-namespace:fayaaz-app-sa  # Placeholder; actual namespace will be set in overlays
