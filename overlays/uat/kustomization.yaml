@@ -1,6 +1,9 @@
 resources:
   - ../../base
   - namespace.yaml
-  - scc-add-fayaaz-app-sa.yaml  # Include SCC modification for the UAT namespace
 
-namespace: uat-fayaaz  # Set the namespace for this overlay
+# Include the SCC manifest from the base
+configurations:
+  - ../../base/scc-add-fayaaz-app-sa.yaml
+
+namespace: uat-namespace  # Set the namespace for this overlay
