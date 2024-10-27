@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fayaaz-deployment
+  namespace: fayaaz
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fayaaz
+  template:
+    metadata:
+      labels:
+        app: fayaaz
+    spec:
+      containers:
+      - name: fayaaz
+        image: nginx:latest
+        ports:
+        - containerPort: 80
