@@ -5,9 +5,9 @@ metadata:
 spec:
   to:
     kind: Service
-    name: fayaaz-service
+    name: fayaaz-service-dev
   port:
     targetPort: 80
-  host: fayaaz.apps.ocp.sfrsm.local
+  host: fayaaz-dev.apps.ocp.sfrsm.local
   tls:
     termination: edge

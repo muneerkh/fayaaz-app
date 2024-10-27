@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: fayaaz-service
+  name: fayaaz-service-dev
   labels:
     app: fayaaz
 spec:
