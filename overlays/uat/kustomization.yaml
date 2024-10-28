@@ -5,4 +5,6 @@ resources:
   - route.yaml
   - scc-add-fayaaz-app-sa.yaml  # Include the SCC modification for the UAT namespace
 
+patchesStrategicMerge:
+  - uat-deployment-patch.yaml
 namespace: uat-fayaaz  # Set the namespace for this overlay

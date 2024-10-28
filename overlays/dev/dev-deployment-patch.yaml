@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dev-fayaaz-deployment
+spec:
+  template:
+    metadata:
+      labels:
+        app: dev-fayaaz
+    spec:
+      serviceAccountName: dev-fayaaz-app-sa  # Use dev-specific ServiceAccount
