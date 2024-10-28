@@ -1,11 +1,11 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: fayaaz-route
+  name: dev-fayaaz-route
 spec:
   to:
     kind: Service
-    name: fayaaz-service-dev
+    name: dev-fayaaz-service
   port:
     targetPort: 80
   host: fayaaz-dev.apps.ocp.sfrsm.local
