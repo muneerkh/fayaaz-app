@@ -7,7 +7,6 @@ resources:
   - dev-service.yaml
   - dev-fayaaz-app-sa.yaml
   - scc-add-fayaaz-app-sa.yaml  # Include the SCC modification for the dev namespace
-
 patchesStrategicMerge:
   - dev-deployment-patch.yaml
 namespace: dev-fayaaz  # Set the namespace for this overlay
