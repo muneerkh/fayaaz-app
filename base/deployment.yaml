@@ -16,7 +16,7 @@ spec:
     spec:
       serviceAccountName: fayaaz-app-sa  # Use the created ServiceAccount
       containers:
-      - name: dev-fayaaz
+      - name: fayaaz-container
         image: nginx:latest  # You can replace this with the actual image for your app
         ports:
         - containerPort: 80

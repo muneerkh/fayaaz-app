@@ -9,3 +9,6 @@ spec:
         app: dev-fayaaz
     spec:
       serviceAccountName: dev-fayaaz-app-sa  # Use dev-specific ServiceAccount
+      containers:
+        - name: dev-fayaaz
+          image: nginx:latest
