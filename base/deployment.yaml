@@ -14,7 +14,7 @@ spec:
       labels:
         app: fayaaz
     spec:
-      serviceAccountName: fayaaz-app-sa  # Use the created ServiceAccount
+      serviceAccountName: dev-fayaaz-app-sa  # Use the created ServiceAccount
       containers:
       - name: fayaaz
         image: nginx:latest  # You can replace this with the actual image for your app
