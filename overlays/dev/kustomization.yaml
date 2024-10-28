@@ -1,12 +1,14 @@
 resources:
-  - ../../base
-  - dev-namespace.yaml
-  - dev-clusterrole.yaml
-  - dev-rolebinding.yaml
-  - dev-route.yaml
-  - dev-service.yaml
-  - dev-fayaaz-app-sa.yaml
-  - scc-add-fayaaz-app-sa.yaml  # Include the SCC modification for the dev namespace
-patchesStrategicMerge:
-  - dev-deployment-patch.yaml
-namespace: dev-fayaaz  # Set the namespace for this overlay
+- ../../base
+- dev-namespace.yaml
+- dev-clusterrole.yaml
+- dev-rolebinding.yaml
+- dev-route.yaml
+- dev-service.yaml
+- dev-fayaaz-app-sa.yaml
+- scc-add-fayaaz-app-sa.yaml
+namespace: dev-fayaaz
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+patches:
+- path: dev-deployment-patch.yaml
