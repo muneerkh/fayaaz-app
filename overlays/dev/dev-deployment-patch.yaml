@@ -1,8 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dev-fayaaz-deployment
+  name: dev-fayaaz-deployment  # Name specific to dev
+  labels:
+    app: dev-fayaaz
 spec:
+  selector:
+    matchLabels:
+      app: dev-fayaaz
   template:
     metadata:
       labels:
@@ -10,5 +15,5 @@ spec:
     spec:
       serviceAccountName: dev-fayaaz-app-sa  # Use dev-specific ServiceAccount
       containers:
-        - name: dev-fayaaz
+        - name: dev-fayaaz-container
           image: nginx:latest

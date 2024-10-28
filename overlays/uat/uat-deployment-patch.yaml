@@ -1,14 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uat-fayaaz-deployment
+  name: uat-fayaaz-deployment  # Name specific to uat
+  labels:
+    app: uat-fayaaz
 spec:
+  selector:
+    matchLabels:
+      app: uat-fayaaz
   template:
     metadata:
       labels:
         app: uat-fayaaz
     spec:
-      serviceAccountName: uat-fayaaz-app-sa  # Use dev-specific ServiceAccount
+      serviceAccountName: uat-fayaaz-app-sa  # Use uat-specific ServiceAccount
       containers:
-        - name: uat-fayaaz
+        - name: uat-fayaaz-container
           image: nginx:latest

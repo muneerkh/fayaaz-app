@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dev-fayaaz-deployment
+  name: fayaaz-deployment
   labels:
-    app: dev-fayaaz
+    app: fayaaz
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dev-fayaaz
+      app: fayaaz
   template:
     metadata:
       labels:
-        app: dev-fayaaz
+        app: fayaaz
     spec:
       serviceAccountName: fayaaz-app-sa  # Use the created ServiceAccount
       containers:
