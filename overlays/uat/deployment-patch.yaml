@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uat-fayaaz-deployment  # Name specific to uat
+  name: fayaaz-deployment  # Match the base deployment name here
   labels:
     app: uat-fayaaz
 spec:

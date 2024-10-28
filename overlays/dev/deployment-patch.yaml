@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dev-fayaaz-deployment  # Name specific to dev
+  name: fayaaz-deployment  # Match the name in base/deployment.yaml exactly
   labels:
     app: dev-fayaaz
 spec:

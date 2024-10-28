@@ -11,4 +11,4 @@ namespace: dev-fayaaz
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 patches:
-- path: dev-deployment-patch.yaml
+- path: deployment-patch.yaml

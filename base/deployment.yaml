@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fayaaz-deployment
+  name: fayaaz-deployment  # Do not change this in overlays
   labels:
     app: fayaaz
 spec:
@@ -14,9 +14,9 @@ spec:
       labels:
         app: fayaaz
     spec:
-      serviceAccountName: fayaaz-app-sa  # Use the created ServiceAccount
+      serviceAccountName: fayaaz-app-sa
       containers:
-      - name: fayaaz-container
-        image: nginx:latest  # You can replace this with the actual image for your app
-        ports:
-        - containerPort: 80
+        - name: fayaaz-container
+          image: nginx:latest
+          ports:
+            - containerPort: 80
