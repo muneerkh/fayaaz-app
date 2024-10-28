@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: dev-fayaaz-app-rolebinding
+  namespace: your-namespace  # Placeholder; actual namespace will be set in overlays
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: dev-fayaaz-app-role
+subjects:
+  - kind: ServiceAccount
+    name: dev-fayaaz-app-sa
+    namespace: your-namespace  # Placeholder; actual namespace will be set in overlays

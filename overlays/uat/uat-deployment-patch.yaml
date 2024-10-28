@@ -8,4 +8,4 @@ spec:
       labels:
         app: uat-fayaaz
     spec:
-      serviceAccountName: dev-fayaaz-app-sa  # Use dev-specific ServiceAccount
+      serviceAccountName: uat-fayaaz-app-sa  # Use dev-specific ServiceAccount
