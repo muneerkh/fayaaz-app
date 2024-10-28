@@ -7,9 +7,6 @@ resources:
   - uat-clusterrole.yaml
   - uat-rolebinding.yaml
   - scc-add-fayaaz-app-sa.yaml  # Include the SCC modification for the UAT namespace
-patches:
-  - path: uat-deployment-patch.yaml
-    target:
-      kind: Deployment 
-      name: uat-fayaaz-deployment
+patchesStrategicMerge:
+  - uat-deployment-patch.yaml
 namespace: uat-fayaaz  # Set the namespace for this overlay
