@@ -16,7 +16,7 @@ spec:
     spec:
       serviceAccountName: fayaaz-app-sa
       containers:
-        - name: fayaaz-container
+        - name: fayaaz-container 
           image: nginx:latest
           ports:
             - containerPort: 80

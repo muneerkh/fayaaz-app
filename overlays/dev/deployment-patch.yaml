@@ -15,4 +15,4 @@ spec:
     spec:
       serviceAccountName: dev-fayaaz-app-sa  # Use dev-specific ServiceAccount
       containers:
-        - name: dev-fayaaz-container
+        - name: fayaaz-container
