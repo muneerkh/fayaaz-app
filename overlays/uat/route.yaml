@@ -8,6 +8,6 @@ spec:
     name: fayaaz-service-uat
   port:
     targetPort: 80
-  host: fayaaz-uat.apps.ocp.sfrsm.local
+  host: uat-fayaaz.apps.ocp.sfrsm.local
   tls:
     termination: edge

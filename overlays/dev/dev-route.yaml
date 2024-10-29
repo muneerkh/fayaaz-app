@@ -8,6 +8,6 @@ spec:
     name: dev-fayaaz-service
   port:
     targetPort: 80
-  host: fayaaz-dev.apps.ocp.sfrsm.local
+  host: dev-fayaaz.apps.ocp.sfrsm.local
   tls:
     termination: edge
