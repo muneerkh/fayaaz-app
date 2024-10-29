@@ -16,4 +16,3 @@ spec:
       serviceAccountName: uat-fayaaz-app-sa  # Use uat-specific ServiceAccount
       containers:
         - name: uat-fayaaz-container
-          image: nginx:latest
