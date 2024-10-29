@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: dev-fayaaz-service
   labels:
-    app: fayaaz
+    app: dev-fayaaz
 spec:
   ports:
     - port: 80
       targetPort: 80
   selector:
-    app: fayaaz
+    app: dev-fayaaz
