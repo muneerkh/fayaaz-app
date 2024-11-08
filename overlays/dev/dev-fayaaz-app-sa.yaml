@@ -2,4 +2,4 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: dev-fayaaz-app-sa
-  namespace: your-namespace  # Replace with your target namespace
+  namespace: dev-fayaaz  # Replace with your target namespace

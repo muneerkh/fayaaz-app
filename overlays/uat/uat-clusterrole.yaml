@@ -9,4 +9,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: uat-fayaaz-app-sa
-  namespace: your-namespace  # Make sure to replace this with your actual namespace
+  namespace: uat-fayaaz  # Make sure to replace this with your actual namespace
